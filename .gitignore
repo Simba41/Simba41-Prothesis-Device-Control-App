@@ -1,0 +1,9 @@
+# --- общие ---
+node_modules/
+
+
+# --- монорепа ---
+client/node_modules/
+server/node_modules/
+
+server/tasks.json      # test data
