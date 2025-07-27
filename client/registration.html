@@ -3,30 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Страница с фон-кругами</title>
+    <title>Prothesis-Device-Control-App</title>
 
-    <!-- единственный файл стилей -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <body style="--circle-color:#B4C178aa;   /* красные 40 % */
-             --btn-color:#B4C178aa;">
-  <!-- блок-фон (круги) -->
+  <body style="--circle-color:#69872Eaa;
+             --btn-color:#69872Eaa;">
+
   <div class="bg-circles"></div>
 
-  <!-- любой ваш контент -->
+
   <div class="content">
-       <img src="images/prosthesis-runner.png" alt="prosthesis-runner" class="content-img" id="prosthesis-runner">
-      <p class="welcome-text">
-        Welcome to our Bio-Prosthetics App! We’re thrilled to have you on board.
-        Embark on your journey to greater comfort and freedom of movement today!
-      </p>
+
+    <button class="back-btn" onclick="history.back()" aria-label="Back">
+      <img src="images/Back.png" alt="">
+    </button>
 
 
-      <button type="button" class="btn-start" onclick="location.href='page2.html'" style="">
-        Get&nbsp;started!
-      </button>
-  </div>
+    <div class="card-title">
+      <h1>Welcome Onboard!</h1>
+      <p>Lets help you to set all up!</p>
+    </div>
+
+  <form id="registerForm" class="register-form">
+
+    <div class="form-field">
+      <input type="text"  placeholder="Enter your full name"        required>
+    </div>
+
+    <div class="form-field">
+      <input type="email"  placeholder="Enter your email"      required>
+    </div>
+
+    <div class="form-field">
+      <input type="password"     placeholder="Enter password"      required>
+    </div>
+
+    <div class="form-field">
+      <input type="password"      placeholder="Confirm password"  required>
+    </div>
+  </form>
+
+  <div class="form-footer">
+  <button type="submit" class="form-btn">Register</button>
+  <p class="note-text">
+    Already have an account?
+    <a href="login.html">Sign in</a>
+  </p>
+</div>
+
+
+</div>
 
 </body>
 </html>
