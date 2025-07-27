@@ -1,4 +1,4 @@
-@media (max-width:600px){         /* телефоны */
+@media (max-width:600px){      
   .content{padding:14px 12px; gap:12px;}
   .card-title h1{font-size:22px;}
   .card-title p{font-size:14px;}
@@ -141,7 +141,7 @@ body{
     flex-direction:column;
     align-items:center;
     gap: 15px; 
-    position:relative;           /* ← добавьте эту строку */
+    position:relative;    
 }
 
 
@@ -195,38 +195,40 @@ body{
 
 
 
-/* ===== поля ввода ===== */
+
 .register-form{
-    display:flex;                 /* ставим колонкой */
+    display:flex;                
     flex-direction:column;
-    align-items:center;           /* центрируем контейнеры */
+    align-items:center;     
+    flex: 1;
+    width: 100%;     
 }
 
 .form-field{
     width:100%;
-    max-width:330px;              /* ширина поля не «выпирает» */
-    margin:0 auto 12px;           /* нижний отступ 12 px */
+    max-width:330px;           
+    margin:0 auto 12px;        
 }
 
 .register-form input{
     width:100%;
-    padding:18px;                 /* высота поля */
+    padding:18px;              
     font-size:24px;
     border:1px solid #ddd;
     border-radius:9px;
     outline:none;
-    box-sizing:border-box;        /* padding+border входят в 100 % */
+    box-sizing:border-box;      
 }
 .register-form input:focus{
     border-color:#68a2d8;
     box-shadow:0 0 0 3px rgba(104,162,216,.25);
 }
 
-/* ===== кнопка ===== */
+
 .form-btn{
     display:block;
     width:100%;
-    max-width:275px;              /* такая же ширина, как поля */
+    max-width:275px;           
     padding:14px 0;
     font-size:28px;
     border:none;
@@ -248,14 +250,14 @@ body{
 
 
 .form-footer{
-    margin-top:auto;                 /* ← прижимает к низу карточки */
+    margin-top:auto;              
     display:flex;
     flex-direction:column;
-    align-items:center;              /* центр по горизонтали */
-    gap:6px;                         /* промежуток между кнопкой и подписью */
+    align-items:center;         
+                     
 }
 
-/* ===== подпись ===== */
+
 .note-text{
     font-family:"Inter",sans-serif;
     font-size:28px;    
@@ -288,7 +290,7 @@ body{
 .back-btn img{width:100%;height:100%;}
 .back-btn:hover{opacity:.7;}
 
-/* ───────── заголовок ───────── */
+
 .card-title{
   text-align:center;
 }
