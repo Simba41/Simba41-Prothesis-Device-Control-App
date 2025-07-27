@@ -6,4 +6,4 @@ node_modules/
 client/node_modules/
 server/node_modules/
 
-server/tasks.json      # test data
+.env  
